@@ -7,7 +7,7 @@ end
 
 function HelloworldHandler:access(config)
     HelloworldHandler.super.access(self)
-    ngx.log("hello world")
+    ngx.log(ngx.ERR, "hello world")
 end
 
 HelloworldHandler.PRIORITY = 3000
